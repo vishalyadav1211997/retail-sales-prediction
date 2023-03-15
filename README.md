@@ -41,14 +41,16 @@ Step 07: Convert Model Performance to Business Values: Convert the performance o
 
 
 ## 3.Machine Learning Model Implementation and performance
-At this stage models used : *Linear Regression, *Lasso Regression, *Random Forest Regressor
+At this stage models used : *Linear Regression, *Lasso Regression, *Decision Tree,*Random Forest Regressor
 
-	                                        Training score                Testing score 
-			Linear Regression	0.780750		       0.782392
+               						     Testing score(adjusted_r2_score)
+			Linear Regression			         0.7067
 			
-			Lasso Regression	0.780731		       0.782369
+			Lasso Regression			         0.7068
 			
-			Random Forest    	0.993811             	       0.956433
+			Decision Tree                                    0.8273
+			
+			Random Forest    	             	         0.8420
 
 
 
@@ -56,4 +58,10 @@ At this stage models used : *Linear Regression, *Lasso Regression, *Random Fores
 
 ## 4. Conclusion
 
-Acheived MAPE of 5.65% and MAE = $376 showing predictions of model is higly accurate for the sales forecast. Generated insights by EDA and feature importance provide valuable tools to decide the amount of budget and inventory for upcoming sales.
+1. By Linear modeling on our dataset we infer that the MSE was *1559270.5*, RMSE was *1248.71*, R2 was *0.70215*, adjusted R2 was *0.70212*.
+
+2. From Lasso regression analysis R2 was *0.70237*, adjusted R2 was *0.70349* which is a clear indication that our model does not overfit.
+
+3. By decision tree analysis we found that MSE: 0.00384, MAE: 0.04868, RMSE : 0.06199, R2 : 0.85395,adjusted_r2_score :0.8272
+
+4. By Random forest analysis our model improved and the R2 was ***0.8657***, MSE : 0.00269, RMSE : 0.05188, MAE : 0.04048, adjusted_r2_score : 0.8419
